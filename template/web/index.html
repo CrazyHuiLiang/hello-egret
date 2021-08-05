@@ -53,6 +53,7 @@
     };
 
     var loadSingleScript = function (src, callback) {
+        console.log('loadSingleScript');
         var s = document.createElement('script');
         s.async = false;
         s.src = src;
@@ -69,7 +70,9 @@
     xhr.addEventListener("load", function () {
         var manifest = JSON.parse(xhr.response);
         var list = manifest.initial.concat(manifest.game);
+        console.log('manifest', manifest, list);
         loadScript(list, function () {
+            console.log('loaded', this);
             /**
              * {
              * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
@@ -78,15 +81,21 @@
              * "calculateCanvasScaleFactor": //a function return canvas scale factor
              * }
              **/
-            egret.runEgret({ renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor:function(context) {
-                var backingStore = context.backingStorePixelRatio ||
-                    context.webkitBackingStorePixelRatio ||
-                    context.mozBackingStorePixelRatio ||
-                    context.msBackingStorePixelRatio ||
-                    context.oBackingStorePixelRatio ||
-                    context.backingStorePixelRatio || 1;
-                return (window.devicePixelRatio || 1) / backingStore;
-            }});
+            console.log('egret', egret);
+            egret.runEgret({
+                renderMode: "webgl",
+                audioType: 0,
+                calculateCanvasScaleFactor: function(context) {
+                    console.log('context', context);
+                    var backingStore = context.backingStorePixelRatio ||
+                        context.webkitBackingStorePixelRatio ||
+                        context.mozBackingStorePixelRatio ||
+                        context.msBackingStorePixelRatio ||
+                        context.oBackingStorePixelRatio ||
+                        context.backingStorePixelRatio || 1;
+                    return (window.devicePixelRatio || 1) / backingStore;
+                }
+            });
         });
     });
     xhr.send(null);

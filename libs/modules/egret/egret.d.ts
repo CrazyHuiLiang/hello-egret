@@ -10054,7 +10054,7 @@ declare module egret {
             onUpdate?: () => void;
         }
         let onResume: () => void;
-        let onPause: () => void;
+let onPause: () => void;
         function addLifecycleListener(plugin: LifecyclePlugin): void;
     }
     /**
