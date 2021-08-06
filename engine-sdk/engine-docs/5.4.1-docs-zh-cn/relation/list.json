@@ -1,0 +1,274 @@
+{
+	"egret": {
+		"class": [
+			"Application",
+			"EgretProUtil",
+			"egret.Base64Util",
+			"egret.Bitmap",
+			"egret.BitmapData",
+			"egret.BitmapFillMode",
+			"egret.BitmapFont",
+			"egret.BitmapText",
+			"egret.BlendMode",
+			"egret.BlurFilter",
+			"egret.ByteArray",
+			"egret.CanvasRenderer",
+			"egret.Capabilities",
+			"egret.CapsStyle",
+			"egret.ChildrenSortMode",
+			"egret.ColorMatrixFilter",
+			"egret.CompressedTextureData",
+			"egret.CustomFilter",
+			"egret.DeviceOrientation",
+			"egret.DisplayObject",
+			"egret.DisplayObjectContainer",
+			"egret.DropShadowFilter",
+			"egret.Endian",
+			"egret.Event",
+			"egret.EventDispatcher",
+			"egret.ExternalInterface",
+			"egret.FocusEvent",
+			"egret.Geolocation",
+			"egret.GeolocationEvent",
+			"egret.GlowFilter",
+			"egret.GradientType",
+			"egret.Graphics",
+			"egret.HTTPStatusEvent",
+			"egret.HashObject",
+			"egret.HorizontalAlign",
+			"egret.HtmlTextParser",
+			"egret.HttpRequest",
+			"egret.HttpResponseType",
+			"egret.IOErrorEvent",
+			"egret.ImageLoader",
+			"egret.JointStyle",
+			"egret.KTXContainer",
+			"egret.Logger",
+			"egret.Matrix",
+			"egret.MotionEvent",
+			"egret.NumberUtils",
+			"egret.OrientationEvent",
+			"egret.OrientationMode",
+			"egret.Point",
+			"egret.ProgressEvent",
+			"egret.Rectangle",
+			"egret.RenderTexture",
+			"egret.Shape",
+			"egret.Sound",
+			"egret.Sprite",
+			"egret.SpriteSheet",
+			"egret.Stage",
+			"egret.StageOrientationEvent",
+			"egret.StageScaleMode",
+			"egret.TextEvent",
+			"egret.TextField",
+			"egret.TextFieldInputType",
+			"egret.TextFieldType",
+			"egret.Texture",
+			"egret.Timer",
+			"egret.TimerEvent",
+			"egret.TouchEvent",
+			"egret.VerticalAlign",
+			"egret.Video",
+			"egret.XML",
+			"egret.lifecycle.LifecycleContext",
+			"egret.sys.SystemTicker",
+			"egret.web.Book",
+			"egret.web.DrawLabel",
+			"egret.web.EgretShaderLib",
+			"egret.web.Line",
+			"egret.web.Page",
+			"egret.web.TextAtlasRender",
+			"egret.web.TextBlock"
+		],
+		"enum": [
+			"egret.EndianConst",
+			"egret.EventPhase"
+		],
+		"interface": [
+			"egret.DeviceAcceleration",
+			"egret.DeviceRotationRate",
+			"egret.IEventDispatcher",
+			"egret.IHashObject",
+			"egret.ITextElement",
+			"egret.ITextStyle",
+			"egret.Motion",
+			"egret.SoundChannel",
+			"egret.SupportedCompressedTexture",
+			"egret.XMLNode",
+			"egret.XMLText",
+			"egret.sys.RenderContext",
+			"egret.web.IDrawData"
+		],
+		"globalFunction": [
+			"egret.globalFunction",
+			"egret.pro.globalFunction",
+			"egret.sys.globalFunction",
+			"egret.web.globalFunction",
+			"egret.localStorage.globalFunction",
+			"egret.lifecycle.globalFunction"
+		],
+		"globalMember": [
+			"window.globalMember",
+			"egret.globalMember",
+			"egret.pro.globalMember",
+			"egret.sys.globalMember",
+			"egret.web.globalMember",
+			"egret.HttpMethod.globalMember",
+			"egret.RuntimeType.globalMember"
+		]
+	},
+	"game": {
+		"class": [
+			"egret.MovieClip",
+			"egret.MovieClipData",
+			"egret.MovieClipDataFactory",
+			"egret.MovieClipEvent",
+			"egret.ScrollView",
+			"egret.Ticker",
+			"egret.URLLoader",
+			"egret.URLLoaderDataFormat",
+			"egret.URLRequest",
+			"egret.URLRequestHeader",
+			"egret.URLRequestMethod",
+			"egret.URLVariables"
+		],
+		"globalFunction": [
+			"egret.globalFunction"
+		]
+	},
+	"assetsmanager": {
+		"interface": [
+			"RES.File",
+			"RES.IVersionController",
+			"RES.PromiseTaskReporter",
+			"RES.processor.Processor"
+		],
+		"class": [
+			"RES.processor.ETC1KTXProcessor",
+			"RES.processor.KTXTextureProcessor"
+		],
+		"globalFunction": [
+			"RES.globalFunction",
+			"RES.path.globalFunction",
+			"RES.processor.globalFunction"
+		],
+		"globalMember": [
+			"RES.globalMember",
+			"RES.processor.globalMember"
+		]
+	},
+	"res": {
+		"class": [
+			"RES.ResourceEvent",
+			"RES.ResourceItem",
+			"RES.VersionController"
+		],
+		"globalFunction": [
+			"RES.globalFunction"
+		]
+	},
+	"eui": {
+		"class": [
+			"eui.AddItems",
+			"eui.ArrayCollection",
+			"eui.BasicLayout",
+			"eui.Binding",
+			"eui.BitmapLabel",
+			"eui.Button",
+			"eui.CheckBox",
+			"eui.CollectionEvent",
+			"eui.CollectionEventKind",
+			"eui.ColumnAlign",
+			"eui.Component",
+			"eui.DataGroup",
+			"eui.DefaultAssetAdapter",
+			"eui.DefaultThemeAdapter",
+			"eui.Direction",
+			"eui.EditableText",
+			"eui.Group",
+			"eui.HScrollBar",
+			"eui.HSlider",
+			"eui.HorizontalLayout",
+			"eui.Image",
+			"eui.ItemRenderer",
+			"eui.ItemTapEvent",
+			"eui.JustifyAlign",
+			"eui.Label",
+			"eui.LayoutBase",
+			"eui.LinearLayoutBase",
+			"eui.List",
+			"eui.ListBase",
+			"eui.Panel",
+			"eui.ProgressBar",
+			"eui.PropertyEvent",
+			"eui.RadioButton",
+			"eui.RadioButtonGroup",
+			"eui.Range",
+			"eui.Rect",
+			"eui.RowAlign",
+			"eui.ScrollBarBase",
+			"eui.ScrollPolicy",
+			"eui.Scroller",
+			"eui.SetProperty",
+			"eui.SetStateProperty",
+			"eui.Skin",
+			"eui.SliderBase",
+			"eui.State",
+			"eui.TabBar",
+			"eui.TextInput",
+			"eui.Theme",
+			"eui.TileLayout",
+			"eui.TileOrientation",
+			"eui.ToggleButton",
+			"eui.ToggleSwitch",
+			"eui.UIEvent",
+			"eui.UILayer",
+			"eui.VScrollBar",
+			"eui.VSlider",
+			"eui.VerticalLayout",
+			"eui.ViewStack",
+			"eui.Watcher"
+		],
+		"interface": [
+			"eui.IAssetAdapter",
+			"eui.ICollection",
+			"eui.IDisplayText",
+			"eui.IItemRenderer",
+			"eui.IOverride",
+			"eui.IThemeAdapter",
+			"eui.IViewport",
+			"eui.UIComponent"
+		],
+		"globalFunction": [
+			"eui.globalFunction",
+			"EXML.globalFunction"
+		],
+		"globalMember": [
+			"EXML.globalMember"
+		]
+	},
+	"socket": {
+		"class": [
+			"egret.WebSocket"
+		]
+	},
+	"tween": {
+		"class": [
+			"egret.Ease",
+			"egret.Tween",
+			"egret.tween.BasePath",
+			"egret.tween.Set",
+			"egret.tween.Tick",
+			"egret.tween.To",
+			"egret.tween.TweenGroup",
+			"egret.tween.TweenItem",
+			"egret.tween.Wait"
+		]
+	},
+	"other": {
+		"class": [
+			"global.Types"
+		]
+	}
+}

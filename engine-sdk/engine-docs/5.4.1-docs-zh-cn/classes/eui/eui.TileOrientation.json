@@ -1,0 +1,42 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "COLUMNS",
+			"memberof": "eui.TileOrientation",
+			"scope": "static",
+			"description": "逐列排列元素。",
+			"version": "eui 1.0",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"columns\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "ROWS",
+			"memberof": "eui.TileOrientation",
+			"scope": "static",
+			"description": "逐行排列元素。",
+			"version": "eui 1.0",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"rows\""
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "TileOrientation",
+		"memberof": "eui",
+		"filename": "extension\\eui\\layouts\\TileOrientation.ts",
+		"description": "TileOrientation 类为 TileLayout 类的 <code>orientation</code> 属性定义可能的值。",
+		"version": "eui 1.0",
+		"platform": "Web,Native",
+		"example": "<pre></pre>"
+	},
+	"pType": "public"
+}

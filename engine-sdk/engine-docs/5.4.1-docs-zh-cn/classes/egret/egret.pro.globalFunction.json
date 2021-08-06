@@ -1,0 +1,213 @@
+{
+	"globalFunction": [
+		{
+			"filename": "egret\\3d\\EgretPro.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "addEventListener",
+			"memberof": "egret.pro",
+			"scope": "instance",
+			"description": "注册事件",
+			"params": [
+				{
+					"name": "eventType",
+					"type": "string",
+					"description": "eventType"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "target"
+				},
+				{
+					"name": "func",
+					"type": "()=>void",
+					"description": "func"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "thisObject"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\3d\\EgretPro.ts",
+			"kind": "globalFunction",
+			"type": "Promise<{[key:string]:egret.Texture;}>",
+			"name": "createTextureForCameras",
+			"memberof": "egret.pro",
+			"scope": "instance",
+			"description": "根据场景地址获取场景，并根据过滤器，获取所有符合条件的相机，渲染为2d贴图并返回单一场景需要用到多个摄像机时可使用此方法被filter过滤掉的Camera组件会将enable设为false",
+			"params": [
+				{
+					"name": "scenePath",
+					"type": "string",
+					"description": "scenePath"
+				},
+				{
+					"name": "filter",
+					"type": "(child:TreeNode)=>boolean",
+					"description": "判断该树节点的相机组件是否需要作为egret.Texture返回"
+				},
+				{
+					"name": "textureWidth",
+					"type": "number",
+					"default": "512",
+					"description": "textureWidth"
+				},
+				{
+					"name": "textureHeight",
+					"type": "number",
+					"default": "512",
+					"description": "textureHeight"
+				},
+				{
+					"name": "scaleFactor",
+					"type": "number",
+					"default": "1",
+					"description": "scaleFactor"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\3d\\EgretPro.ts",
+			"kind": "globalFunction",
+			"type": "Promise<egret.Texture>",
+			"name": "createTextureFrom3dScene",
+			"memberof": "egret.pro",
+			"scope": "instance",
+			"description": "根据场景地址获取场景，并将主摄像机Main Camera渲染为2d贴图并返回只能在场景中只有一个相机（Main Camera）时使用",
+			"params": [
+				{
+					"name": "scenePath",
+					"type": "string",
+					"description": "场景路径（相对与3d项目resource文件夹）"
+				},
+				{
+					"name": "textureWidth",
+					"type": "number",
+					"default": "512",
+					"description": "贴图宽度 ，默认为512"
+				},
+				{
+					"name": "textureHeight",
+					"type": "number",
+					"default": "512",
+					"description": "贴图高度 ，默认为512"
+				},
+				{
+					"name": "scaleFactor",
+					"type": "number",
+					"default": "1",
+					"description": "贴图质量。系数越大，贴图越清晰"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\3d\\EgretPro.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "dispatch",
+			"memberof": "egret.pro",
+			"scope": "instance",
+			"description": "派发事件",
+			"params": [
+				{
+					"name": "command",
+					"type": "string",
+					"description": "command"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "target"
+				},
+				{
+					"name": "...args",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\3d\\EgretPro.ts",
+			"kind": "globalFunction",
+			"type": "any",
+			"name": "execute",
+			"memberof": "egret.pro",
+			"scope": "instance",
+			"description": "执行方法通过传入命令的字符串，获取已注册的方法并执行，参数为可变参数执行方法可获取到方法的返回值若找到注册该方法，会报出警告并返回 null",
+			"params": [
+				{
+					"name": "command",
+					"type": "string",
+					"description": "command"
+				},
+				{
+					"name": "...args",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\3d\\EgretPro.ts",
+			"kind": "globalFunction",
+			"name": "register",
+			"memberof": "egret.pro",
+			"scope": "instance",
+			"description": "注册方法根据传入字符串名称，注册方法同一个名称的方法只能注册一次，相同名称会报出警告",
+			"params": [
+				{
+					"name": "command",
+					"type": "string",
+					"description": "command"
+				},
+				{
+					"name": "func",
+					"type": "()=>any",
+					"description": "func"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "thisObject"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\3d\\EgretPro.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "removeEventListener",
+			"memberof": "egret.pro",
+			"scope": "instance",
+			"description": "移除事件",
+			"params": [
+				{
+					"name": "eventType",
+					"type": "string",
+					"description": "eventType"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "target"
+				},
+				{
+					"name": "func",
+					"type": "()=>void",
+					"description": "func"
+				}
+			],
+			"pType": "public"
+		}
+	]
+}

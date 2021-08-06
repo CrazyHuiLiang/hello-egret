@@ -1,0 +1,30 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "etc1",
+			"memberof": "egret.SupportedCompressedTexture",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "pvrtc",
+			"memberof": "egret.SupportedCompressedTexture",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "SupportedCompressedTexture",
+		"memberof": "egret",
+		"filename": "egret\\system\\Capabilities.ts"
+	},
+	"pType": "public"
+}

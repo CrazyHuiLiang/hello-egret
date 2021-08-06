@@ -1,0 +1,45 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onProgress",
+			"memberof": "RES.PromiseTaskReporter",
+			"scope": "instance",
+			"description": "进度回调，异步执行，加载数目和顺序无关",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "current",
+					"type": "number",
+					"description": "当前已经加载数目"
+				},
+				{
+					"name": "total",
+					"type": "number",
+					"description": "当前资源包内需要资源总数"
+				},
+				{
+					"name": "resItem",
+					"type": "RES.ResourceInfo|undefined",
+					"description": "当前加载资源信息"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "PromiseTaskReporter",
+		"memberof": "RES",
+		"filename": "extension\\assetsmanager\\src\\core\\ResourceManager.ts",
+		"description": "资源组的加载进度提示",
+		"version": "Egret 5.2",
+		"platform": "Web,Native"
+	},
+	"pType": "public"
+}

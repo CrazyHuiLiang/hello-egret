@@ -1,0 +1,93 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getData",
+			"memberof": "RES.processor.Processor",
+			"scope": "instance",
+			"description": "获取合并图集的子图",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "host",
+					"type": "RES.ProcessHost",
+					"description": "加载处理器"
+				},
+				{
+					"name": "resource",
+					"type": "RES.ResourceInfo",
+					"description": "资源的信息"
+				},
+				{
+					"name": "key",
+					"type": "string",
+					"description": "资源的key值"
+				},
+				{
+					"name": "subkey",
+					"type": "string",
+					"description": "子集名称的集合"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Promise<any>",
+			"name": "onLoadStart",
+			"memberof": "RES.processor.Processor",
+			"scope": "instance",
+			"description": "开始加载单项资源",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "host",
+					"type": "RES.ProcessHost",
+					"description": "加载处理器，可以不使用这个处理器加载资源，直接用http获取资源返回即可"
+				},
+				{
+					"name": "resource",
+					"type": "RES.ResourceInfo",
+					"description": "资源的信息"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onRemoveStart",
+			"memberof": "RES.processor.Processor",
+			"scope": "instance",
+			"description": "移除单项资源，一般调用host.unload(resource);",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "host",
+					"type": "RES.ProcessHost",
+					"description": "加载处理器"
+				},
+				{
+					"name": "resource",
+					"type": "RES.ResourceInfo",
+					"description": "资源的信息"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "Processor",
+		"memberof": "RES.processor",
+		"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts"
+	},
+	"pType": "public"
+}

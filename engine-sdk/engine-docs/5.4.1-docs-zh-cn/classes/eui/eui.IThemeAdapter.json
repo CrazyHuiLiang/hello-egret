@@ -1,0 +1,44 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "getTheme",
+			"memberof": "eui.IThemeAdapter",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "url",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "compFunc",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "errorFunc",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "IThemeAdapter",
+		"memberof": "eui",
+		"filename": "extension\\eui\\core\\IThemeAdapter.ts"
+	},
+	"pType": "public"
+}

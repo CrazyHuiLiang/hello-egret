@@ -1,0 +1,47 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "onLoadStart",
+			"memberof": "RES.processor.KTXTextureProcessor",
+			"scope": "static",
+			"params": [
+				{
+					"name": "host",
+					"description": ""
+				},
+				{
+					"name": "resource",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "onRemoveStart",
+			"memberof": "RES.processor.KTXTextureProcessor",
+			"scope": "static",
+			"params": [
+				{
+					"name": "host",
+					"description": ""
+				},
+				{
+					"name": "resource",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "KTXTextureProcessor",
+		"memberof": "RES.processor",
+		"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts"
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "CLIP",
+			"memberof": "egret.BitmapFillMode",
+			"scope": "static",
+			"description": "在区域的边缘处截断不显示位图。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"clip\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "REPEAT",
+			"memberof": "egret.BitmapFillMode",
+			"scope": "static",
+			"description": "重复位图以填充区域。",
+			"version": "Egret 2.4",
+			"platform": "Web",
+			"pType": "public",
+			"default": "\"repeat\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "SCALE",
+			"memberof": "egret.BitmapFillMode",
+			"scope": "static",
+			"description": "位图填充拉伸以填充区域。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"scale\""
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BitmapFillMode",
+		"memberof": "egret",
+		"filename": "egret\\display\\BitmapFillMode.ts",
+		"description": "BitmapFillMode 类定义Bitmap的图像填充方式。BitmapFillMode 类定义了调整大小模式的一个枚举，这些模式确定 Bitmap 如何填充由布局系统指定的尺寸。",
+		"see": [
+			"http://edn.egret.com/cn/docs/page/134 纹理的填充方式"
+		],
+		"version": "Egret 2.4",
+		"platform": "Web,Native",
+		"example": "<pre></pre>"
+	}
+}

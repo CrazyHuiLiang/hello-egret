@@ -1,0 +1,325 @@
+{
+	"globalFunction": [
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "WebGLTexture",
+			"name": "_createTexture",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"description": "通过 width, height, data创建纹理",
+			"params": [
+				{
+					"name": "renderContext",
+					"type": "egret.sys.RenderContext",
+					"description": ""
+				},
+				{
+					"name": "width",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "height",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "HTMLCanvasElement",
+			"name": "createCanvas",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "width",
+					"question": true,
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "height",
+					"question": true,
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "HTMLCanvasElement",
+			"name": "createCanvasRenderBufferSurface",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"description": "为CanvasRenderBuffer创建一个canvas",
+			"params": [
+				{
+					"name": "defaultFunc",
+					"type": "(width?:number,height?:number)=>HTMLCanvasElement",
+					"description": "defaultFunc"
+				},
+				{
+					"name": "width",
+					"question": true,
+					"type": "number",
+					"description": "width"
+				},
+				{
+					"name": "height",
+					"question": true,
+					"type": "number",
+					"description": "height"
+				},
+				{
+					"name": "root",
+					"question": true,
+					"type": "boolean",
+					"description": "root"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "WebGLTexture",
+			"name": "createTexture",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"description": "仅通过bitmapData创建纹理",
+			"params": [
+				{
+					"name": "renderContext",
+					"type": "egret.sys.RenderContext",
+					"description": ""
+				},
+				{
+					"name": "bitmapData",
+					"type": "egret.BitmapData|HTMLCanvasElement",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "number",
+			"name": "drawTextureElements",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"description": "画texture",
+			"params": [
+				{
+					"name": "renderContext",
+					"type": "egret.sys.RenderContext",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "offset",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "CanvasRenderingContext2D",
+			"name": "getContext2d",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "surface",
+					"type": "HTMLCanvasElement",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "WebGLRenderingContext",
+			"name": "getContextWebGL",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"description": "获得系统的渲染运行时",
+			"params": [
+				{
+					"name": "surface",
+					"type": "HTMLCanvasElement",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "HTMLCanvasElement",
+			"name": "mainCanvas",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"description": "创建一个canvas。",
+			"params": [
+				{
+					"name": "width",
+					"question": true,
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "height",
+					"question": true,
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "number",
+			"name": "measureTextWith",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"description": "测量文本的宽度",
+			"params": [
+				{
+					"name": "context",
+					"type": "CanvasRenderingContext2D",
+					"description": "context"
+				},
+				{
+					"name": "text",
+					"type": "string",
+					"description": "text"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\text\\Font.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "registerFontMapping",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "path",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "resizeCanvasRenderBuffer",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"description": "改变渲染缓冲的大小并清空缓冲区",
+			"params": [
+				{
+					"name": "renderContext",
+					"type": "egret.sys.RenderContext",
+					"description": "renderContext"
+				},
+				{
+					"name": "width",
+					"type": "number",
+					"description": "width"
+				},
+				{
+					"name": "height",
+					"type": "number",
+					"description": "height"
+				},
+				{
+					"name": "useMaxSize",
+					"question": true,
+					"type": "boolean",
+					"description": "useMaxSize"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemRenderer.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "resizeContext",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"description": "重新设置主canvas的大小",
+			"params": [
+				{
+					"name": "renderContext",
+					"type": "egret.sys.RenderContext",
+					"description": ""
+				},
+				{
+					"name": "width",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "height",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "useMaxSize",
+					"question": true,
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\Player.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "setRenderMode",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "renderMode",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	]
+}

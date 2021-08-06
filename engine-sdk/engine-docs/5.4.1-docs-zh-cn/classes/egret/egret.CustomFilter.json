@@ -1,0 +1,114 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "$padding",
+			"memberof": "egret.CustomFilter",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "hashCode",
+			"memberof": "egret.HashObject",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "返回此对象唯一的哈希值,用于唯一确定一个对象。hashCode为大于等于1的整数。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "egret.HashObject"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "padding",
+			"memberof": "egret.CustomFilter",
+			"scope": "instance",
+			"description": "滤镜的内边距如果自定义滤镜所需区域比原区域大（描边等），需要手动设置",
+			"version": "Egret 4.1.0",
+			"platform": "Web",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "uniforms",
+			"memberof": "egret.CustomFilter",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "着色器中uniform的初始值（key，value一一对应），目前仅支持数字和数组。",
+			"version": "Egret 4.1.0",
+			"platform": "Web",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "CustomFilter",
+			"memberof": "egret.CustomFilter",
+			"scope": "instance",
+			"description": "初始化 CustomFilter 对象",
+			"version": "Egret 4.1.0",
+			"platform": "Web",
+			"params": [
+				{
+					"name": "vertexSrc",
+					"type": "string",
+					"description": "自定义的顶点着色器程序。"
+				},
+				{
+					"name": "fragmentSrc",
+					"type": "string",
+					"description": "自定义的片段着色器程序。"
+				},
+				{
+					"name": "uniforms",
+					"type": "any",
+					"default": "{}",
+					"description": "着色器中uniform的初始值（key，value一一对应），目前仅支持数字和数组。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onPropertyChange",
+			"memberof": "egret.CustomFilter",
+			"scope": "instance",
+			"description": "开启原生渲染加速后，自定义shader需要在创建和更新属性时手动调用",
+			"version": "Egret 5.0.3",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "updatePadding",
+			"memberof": "egret.Filter",
+			"scope": "instance",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "egret.Filter"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "CustomFilter",
+		"memberof": "egret",
+		"filename": "egret\\filters\\CustomFilter.ts",
+		"description": "自定义滤镜，目前仅支持WebGL模式",
+		"version": "Egret 4.1.0",
+		"platform": "Web",
+		"augments": []
+	},
+	"pType": "public"
+}

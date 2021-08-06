@@ -1,0 +1,51 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "getAsset",
+			"memberof": "eui.DefaultAssetAdapter",
+			"scope": "instance",
+			"description": "解析素材",
+			"version": "eui 1.0",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "source",
+					"type": "string",
+					"description": "待解析的新素材标识符"
+				},
+				{
+					"name": "callBack",
+					"type": "(data:any,source:string)=>void",
+					"description": "解析完成回调函数，示例：callBack(content:any,source:string):void;"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "callBack的 this 引用"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "DefaultAssetAdapter",
+		"memberof": "eui",
+		"filename": "extension\\eui\\components\\supportClasses\\DefaultAssetAdapter.ts",
+		"description": "默认的IAssetAdapter接口实现。",
+		"version": "eui 1.0",
+		"platform": "Web,Native",
+		"example": "<pre></pre>",
+		"implements": [
+			{
+				"name": "eui.IAssetAdapter"
+			}
+		]
+	},
+	"pType": "public"
+}

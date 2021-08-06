@@ -1,0 +1,119 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "egret.web.WebGLRenderBuffer",
+			"name": "buffer",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "count",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "egret.Filter",
+			"name": "filter",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "height",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "smoothing",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "WebGLTexture",
+			"name": "texture",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "textureHeight",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "textureWidth",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "type",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "value",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"description": "//uv: any,",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "width",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "x",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "y",
+			"memberof": "egret.web.IDrawData",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "IDrawData",
+		"memberof": "egret.web",
+		"filename": "egret\\web\\rendering\\webgl\\WebGLDrawCmdManager.ts"
+	},
+	"pType": "public"
+}

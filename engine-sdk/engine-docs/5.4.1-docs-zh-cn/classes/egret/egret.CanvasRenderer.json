@@ -1,0 +1,129 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "drawDisplayToBuffer",
+			"memberof": "egret.CanvasRenderer",
+			"scope": "instance",
+			"description": "将一个DisplayObject绘制到渲染缓冲，用于RenderTexture绘制",
+			"params": [
+				{
+					"name": "displayObject",
+					"type": "egret.DisplayObject",
+					"description": "要绘制的显示对象"
+				},
+				{
+					"name": "buffer",
+					"type": "egret.sys.RenderBuffer",
+					"description": "渲染缓冲"
+				},
+				{
+					"name": "matrix",
+					"type": "egret.Matrix",
+					"description": "要叠加的矩阵"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "drawNodeToBuffer",
+			"memberof": "egret.CanvasRenderer",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "node",
+					"type": "egret.sys.RenderNode",
+					"description": ""
+				},
+				{
+					"name": "buffer",
+					"type": "egret.sys.RenderBuffer",
+					"description": ""
+				},
+				{
+					"name": "matrix",
+					"type": "egret.Matrix",
+					"description": ""
+				},
+				{
+					"name": "forHitTest",
+					"question": true,
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "render",
+			"memberof": "egret.CanvasRenderer",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "displayObject",
+					"type": "egret.DisplayObject",
+					"description": ""
+				},
+				{
+					"name": "buffer",
+					"type": "egret.sys.RenderBuffer",
+					"description": ""
+				},
+				{
+					"name": "matrix",
+					"type": "egret.Matrix",
+					"description": ""
+				},
+				{
+					"name": "forRenderTexture",
+					"question": true,
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "renderClear",
+			"memberof": "egret.CanvasRenderer",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "renderText",
+			"memberof": "egret.CanvasRenderer",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "node",
+					"type": "egret.sys.TextNode",
+					"description": ""
+				},
+				{
+					"name": "context",
+					"type": "CanvasRenderingContext2D",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "CanvasRenderer",
+		"memberof": "egret",
+		"filename": "egret\\player\\rendering\\CanvasRenderer.ts"
+	},
+	"pType": "public"
+}

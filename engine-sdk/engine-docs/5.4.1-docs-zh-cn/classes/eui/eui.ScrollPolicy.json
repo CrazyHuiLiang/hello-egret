@@ -1,0 +1,54 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "AUTO",
+			"memberof": "eui.ScrollPolicy",
+			"scope": "static",
+			"description": "如果子项超出父级的尺寸，则允许滚动，反之不允许滚动。",
+			"version": "eui 1.0",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"auto\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "OFF",
+			"memberof": "eui.ScrollPolicy",
+			"scope": "static",
+			"description": "从不允许滚动。",
+			"version": "eui 1.0",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"off\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "ON",
+			"memberof": "eui.ScrollPolicy",
+			"scope": "static",
+			"description": "总是允许滚动。",
+			"version": "eui 1.0",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"on\""
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ScrollPolicy",
+		"memberof": "eui",
+		"filename": "extension\\eui\\core\\ScrollPolicy.ts",
+		"description": "滚动条显示策略常量。Scroller 类的 <code>horizontalCanScroll</code> 和 <code>verticalCanScroll</code> 属性的值。",
+		"version": "eui 1.0",
+		"platform": "Web,Native",
+		"example": "<pre></pre>"
+	},
+	"pType": "public"
+}

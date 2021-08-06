@@ -1,0 +1,12 @@
+{
+	"globalMember": [
+		{
+			"filename": "extension\\assetsmanager\\src\\core\\ResourceManager.ts",
+			"kind": "globalMember",
+			"name": "__tempCache",
+			"memberof": "RES",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	]
+}

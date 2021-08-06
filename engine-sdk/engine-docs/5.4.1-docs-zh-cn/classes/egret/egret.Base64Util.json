@@ -1,0 +1,54 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "ArrayBuffer",
+			"name": "decode",
+			"memberof": "egret.Base64Util",
+			"scope": "static",
+			"description": "解码base64。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "base64",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "encode",
+			"memberof": "egret.Base64Util",
+			"scope": "static",
+			"description": "编码base64。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "arraybuffer",
+					"type": "ArrayBuffer",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Base64Util",
+		"memberof": "egret",
+		"filename": "egret\\utils\\Base64Util.ts",
+		"description": "Base64Util 类提供用于编解码base64的方法。",
+		"version": "Egret 2.4",
+		"platform": "Web,Native",
+		"example": "<pre></pre>"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,83 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "HTMLCanvasElement",
+			"name": "_canvas",
+			"memberof": "egret.web.TextAtlasRender",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "null"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "hashCode",
+			"memberof": "egret.HashObject",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "返回此对象唯一的哈希值,用于唯一确定一个对象。hashCode为大于等于1的整数。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "egret.HashObject"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "TextAtlasRender",
+			"memberof": "egret.web.TextAtlasRender",
+			"scope": "instance",
+			"description": "//",
+			"params": [
+				{
+					"name": "webglRenderContext",
+					"type": "egret.web.WebGLRenderContext",
+					"description": ""
+				},
+				{
+					"name": "maxSize",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "border",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "analysisTextNodeAndFlushDrawLabel",
+			"memberof": "egret.web.TextAtlasRender",
+			"scope": "static",
+			"description": "//分析textNode，把数据提取出来，然后给textNode挂上渲染的信息",
+			"params": [
+				{
+					"name": "textNode",
+					"type": "egret.sys.TextNode",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "TextAtlasRender",
+		"memberof": "egret.web",
+		"filename": "egret\\web\\rendering\\webgl\\TextAtlasRender.ts",
+		"description": "//对外的类",
+		"augments": [
+			"egret.HashObject"
+		]
+	},
+	"pType": "public"
+}

@@ -1,0 +1,26 @@
+{
+	"globalMember": [
+		{
+			"filename": "egret\\net\\HttpMethod.ts",
+			"kind": "globalMember",
+			"name": "GET",
+			"memberof": "egret.HttpMethod",
+			"scope": "instance",
+			"description": "表示 HttpRequest 对象是一个 GET。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\net\\HttpMethod.ts",
+			"kind": "globalMember",
+			"name": "POST",
+			"memberof": "egret.HttpMethod",
+			"scope": "instance",
+			"description": "表示 HttpRequest 对象是一个 POST。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public"
+		}
+	]
+}

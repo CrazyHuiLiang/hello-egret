@@ -1,0 +1,37 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "()=>void",
+			"name": "onUpdate",
+			"memberof": "egret.lifecycle.LifecycleContext",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "pause",
+			"memberof": "egret.lifecycle.LifecycleContext",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "resume",
+			"memberof": "egret.lifecycle.LifecycleContext",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "LifecycleContext",
+		"memberof": "egret.lifecycle",
+		"filename": "egret\\player\\SystemTicker.ts"
+	},
+	"pType": "public"
+}

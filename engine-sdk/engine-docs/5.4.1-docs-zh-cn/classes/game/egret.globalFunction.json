@@ -1,0 +1,129 @@
+{
+	"globalFunction": [
+		{
+			"filename": "extension\\game\\net\\URLLoader.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "$getUrl",
+			"memberof": "egret",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "request",
+					"type": "egret.URLRequest",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "extension\\game\\utils\\setInterval.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "clearInterval",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "清除指定延迟后运行的函数。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"example": "<pre></pre>",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "egret.setInterval所返回的索引"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\game\\utils\\setTimeout.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "clearTimeout",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "清除指定延迟后运行的函数。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "egret.setTimeout所返回的索引"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\game\\utils\\setInterval.ts",
+			"kind": "globalFunction",
+			"type": "number",
+			"name": "setInterval",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "以指定的延迟（以毫秒为单位）间隔循环调用指定的函数。",
+			"returns": "返回索引，可以用于 clearInterval",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"example": "<pre></pre>",
+			"params": [
+				{
+					"name": "listener",
+					"type": "()=>void",
+					"description": "侦听函数"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "this对象"
+				},
+				{
+					"name": "delay",
+					"type": "number",
+					"description": "延迟时间，以毫秒为单位"
+				},
+				{
+					"name": "...args",
+					"description": "参数列表"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\game\\utils\\setTimeout.ts",
+			"kind": "globalFunction",
+			"type": "number",
+			"name": "setTimeout",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "在指定的延迟（以毫秒为单位）后运行指定的函数。",
+			"returns": "返回索引，可以用于 clearTimeout",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"example": "<pre></pre>",
+			"params": [
+				{
+					"name": "listener",
+					"type": "()=>void",
+					"description": "侦听函数"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "this对象"
+				},
+				{
+					"name": "delay",
+					"type": "number",
+					"description": "延迟时间，以毫秒为单位"
+				},
+				{
+					"name": "...args",
+					"description": "参数列表"
+				}
+			],
+			"pType": "public"
+		}
+	]
+}

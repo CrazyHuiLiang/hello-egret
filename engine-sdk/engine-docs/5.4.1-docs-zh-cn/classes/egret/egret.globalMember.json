@@ -1,0 +1,63 @@
+{
+	"globalMember": [
+		{
+			"filename": "egret\\display\\Texture.ts",
+			"kind": "globalMember",
+			"type": "number",
+			"name": "$TextureScaleFactor",
+			"memberof": "egret",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\display\\BitmapData.ts",
+			"kind": "globalMember",
+			"name": "UNPACK_PREMULTIPLY_ALPHA_WEBGL",
+			"memberof": "egret",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\display\\BitmapData.ts",
+			"kind": "globalMember",
+			"name": "engine_default_empty_texture",
+			"memberof": "egret",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\display\\BitmapData.ts",
+			"kind": "globalMember",
+			"name": "etc_alpha_mask",
+			"memberof": "egret",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\display\\BitmapData.ts",
+			"kind": "globalMember",
+			"name": "glContext",
+			"memberof": "egret",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\display\\BitmapData.ts",
+			"kind": "globalMember",
+			"name": "is_compressed_texture",
+			"memberof": "egret",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemTicker.ts",
+			"kind": "globalMember",
+			"type": "egret.sys.SystemTicker",
+			"name": "ticker",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "心跳计时器单例",
+			"pType": "public"
+		}
+	]
+}

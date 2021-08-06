@@ -1,0 +1,712 @@
+{
+	"globalFunction": [
+		{
+			"filename": "Defines.release.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "_error",
+			"memberof": "egret",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "code",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "Defines.debug.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "_error",
+			"memberof": "egret",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "code",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "...params",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "Defines.debug.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "_markReadOnly",
+			"memberof": "egret",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "instance",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "property",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "isProperty",
+					"type": "boolean",
+					"default": "true",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\text\\Font.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "_registerFontMapping",
+			"memberof": "egret",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "path",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "Defines.debug.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "_warn",
+			"memberof": "egret",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "code",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "...params",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "Defines.release.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "_warn",
+			"memberof": "egret",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\text\\TextField.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "addLanguageWordWrapRegex",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "添加新的自动换行的语言正则表达式匹配并启用如果已经有该语言了，则会替换现有正则表达式不传入正则表达式则会在已有的语言自动换行匹配串中寻找并启用",
+			"version": "Egret 5.3.11",
+			"platform": "Web",
+			"params": [
+				{
+					"name": "languageKey",
+					"type": "string",
+					"description": "languageKey"
+				},
+				{
+					"name": "pattern",
+					"question": true,
+					"type": "string",
+					"description": "pattern"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Console.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "assert",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "判断参数assertion是否为true，若为false则抛出异常并且在console输出相应信息，反之什么也不做。",
+			"params": [
+				{
+					"name": "assertion",
+					"question": true,
+					"type": "boolean",
+					"description": "一个 boolean 表达式，若结果为false，则抛出错误并输出信息。"
+				},
+				{
+					"name": "message",
+					"question": true,
+					"type": "string",
+					"description": "要输出到控制台的信息"
+				},
+				{
+					"name": "...optionalParams",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\callLater.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "callLater",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "延迟函数到屏幕重绘前执行。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"example": "<pre></pre>",
+			"params": [
+				{
+					"name": "method",
+					"type": "Function",
+					"description": "要延迟执行的函数"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "回调函数的this引用"
+				},
+				{
+					"name": "...args",
+					"description": "函数参数列表"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\text\\TextField.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "cancelLanguageWordWrapRegex",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "根据languageKey取消正在启用的自动换行正则表达式",
+			"version": "Egret 5.3.11",
+			"platform": "Web",
+			"params": [
+				{
+					"name": "languageKey",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Console.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "error",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "输出一个错误信息到控制台。",
+			"params": [
+				{
+					"name": "message",
+					"question": true,
+					"type": "any",
+					"description": "要输出到控制台的信息"
+				},
+				{
+					"name": "...optionalParams",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\text\\TextField.ts",
+			"kind": "globalFunction",
+			"type": "string[]",
+			"name": "getAllSupportLanguageWordWrap",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "获取当前已有的自动换行映射键值组",
+			"version": "Egret 5.3.11",
+			"platform": "Web",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\getDefinitionByName.ts",
+			"kind": "globalFunction",
+			"type": "any",
+			"name": "getDefinitionByName",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "返回 name 参数指定的类的类对象引用。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"example": "<pre></pre>",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "类的名称。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Implementation.ts",
+			"kind": "globalFunction",
+			"type": "any",
+			"name": "getImplementation",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "获取一个接口实现。此方法通常由框架内部调用。获取项目注入的自定义实现实例。",
+			"returns": "返回实现此接口的实例。",
+			"version": "Egret 3.2.1",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "interfaceName",
+					"type": "string",
+					"description": "要获取的接口名称。例如：\"eui.IAssetAdapter\",\"eui.Theme\""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\getOption.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "getOption",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "获取浏览器或者Runtime参数，如果没有设置返回空字符串在浏览器中相当于获取url中参数，在Runtime获取对应setOption参数",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "参数key"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\getQualifiedClassName.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "getQualifiedClassName",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "返回对象的完全限定类名。",
+			"returns": "包含完全限定类名称的字符串。",
+			"example": "<pre></pre>",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "value",
+					"type": "any",
+					"description": "需要完全限定类名称的对象，可以将任何 JavaScript 值传递给此方法，包括所有可用的 JavaScript 类型、对象实例、原始类型（如number)和类对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\getQualifiedSuperclassName.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "getQualifiedSuperclassName",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "返回 value 参数指定的对象的基类的完全限定类名。",
+			"returns": "完全限定的基类名称，或 null（如果不存在基类名称）。",
+			"example": "<pre></pre>",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "value",
+					"type": "any",
+					"description": "需要取得父类的对象，可以将任何 JavaScript 值传递给此方法，包括所有可用的 JavaScript 类型、对象实例、原始类型（如number）和类对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\getTimer.ts",
+			"kind": "globalFunction",
+			"type": "number",
+			"name": "getTimer",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "用于计算相对时间。此方法返回自启动 Egret 框架以来经过的毫秒数。",
+			"returns": "启动 Egret 框架以来经过的毫秒数。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"example": "<pre></pre>",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\text\\TextField.ts",
+			"kind": "globalFunction",
+			"type": "string[]",
+			"name": "getUsingWordWrap",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "获取当前正在使用中的自动换行映射键值组",
+			"version": "Egret 5.3.11",
+			"platform": "Web",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\hasDefinition.ts",
+			"kind": "globalFunction",
+			"type": "boolean",
+			"name": "hasDefinition",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "检查指定的应用程序域之内是否存在一个公共定义。该定义可以是一个类、一个命名空间或一个函数的定义。",
+			"returns": "公共定义是否存在",
+			"example": "<pre></pre>",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "定义的名称。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\is.ts",
+			"kind": "globalFunction",
+			"type": "boolean",
+			"name": "is",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "检查指定对象是否为 Egret 框架内指定接口或类或其子类的实例。此方法与使用 instanceOf 关键字相比具有更高的性能，并且能判断接口的实现。",
+			"returns": "返回true表示当前对象是指定类或接口的实例。",
+			"example": "<pre><br/>&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;instance&nbsp;=&nbsp;new&nbsp;egret.Sprite();<br/>&nbsp;&nbsp;&nbsp;&nbsp;egret.log(egret.is(instance,&quot;egret.Sprite&quot;))&nbsp;&nbsp;//true<br/>&nbsp;&nbsp;&nbsp;&nbsp;egret.log(egret.is(instance,&quot;egret.DisplayObjectContainer&quot;))&nbsp;&nbsp;//true<br/>&nbsp;&nbsp;&nbsp;&nbsp;egret.log(egret.is(instance,&quot;egret.Bitmap&quot;))&nbsp;&nbsp;//false<br/></pre>",
+			"see": [
+				"egret.registerClass()"
+			],
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "instance",
+					"type": "any",
+					"description": "要判断的实例。"
+				},
+				{
+					"name": "typeName",
+					"type": "string",
+					"description": "类或接口的完全名称."
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Console.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "log",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "输出一个日志信息到控制台。",
+			"params": [
+				{
+					"name": "message",
+					"question": true,
+					"type": "any",
+					"description": "要输出到控制台的信息"
+				},
+				{
+					"name": "...optionalParams",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\registerClass.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "registerClass",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "为一个类定义注册运行时类信息,用此方法往类定义上注册它自身以及所有接口对应的字符串。在运行时，这个类的实例将可以使用 egret.is() 方法传入一个字符串来判断实例类型。",
+			"example": "以下代码演示了如何为EventDispatcher类注册运行时类信息并判断类型：<pre><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//为egret.EventDispatcher类注册运行时类信息，由于它实现了IEventDispatcher接口，这里应同时传入接口名对应的字符串。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;egret.registerClass(egret.EventDispatcher,&quot;egret.EventDispatcher&quot;,[&quot;egret.IEventDispatcher&quot;]);<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;dispatcher&nbsp;=&nbsp;new&nbsp;egret.EventDispatcher();<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;egret.log(egret.is(dispatcher,&nbsp;&quot;egret.IEventDispatcher&quot;));&nbsp;&nbsp;//true。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;egret.log(egret.is(dispatcher,&nbsp;&quot;egret.EventDispatcher&quot;));&nbsp;&nbsp;&nbsp;//true。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;egret.log(egret.is(dispatcher,&nbsp;&quot;egret.Bitmap&quot;));&nbsp;&nbsp;&nbsp;//false。<br/></pre>注意：若您使用 TypeScript 来编写程序，egret 命令行会自动帮您生成类信息注册代码行到最终的 Javascript 文件中。因此您不需要手动调用此方法。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "classDefinition",
+					"type": "any",
+					"description": "要注册的类定义。"
+				},
+				{
+					"name": "className",
+					"type": "string",
+					"description": "要注册的类名。"
+				},
+				{
+					"name": "interfaceNames",
+					"question": true,
+					"type": "string[]",
+					"description": "要注册的类所实现的接口名列表。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\text\\Font.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "registerFontMapping",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "注册字体映射",
+			"version": "Egret 5.3",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "要注册的字体名称"
+				},
+				{
+					"name": "path",
+					"type": "string",
+					"description": "注册的字体地址"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Implementation.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "registerImplementation",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "注册一个接口实现。",
+			"version": "Egret 3.2.1",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "interfaceName",
+					"type": "string",
+					"description": "注入的接口名称。例如：\"eui.IAssetAdapter\",\"eui.Theme\""
+				},
+				{
+					"name": "instance",
+					"type": "any",
+					"description": "实现此接口的实例。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\EgretEntry.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "runEgret",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "egret工程入口函数",
+			"params": [
+				{
+					"name": "options",
+					"question": true,
+					"type": "runEgretOptions",
+					"description": "一个可选对象，包含初始化Egret引擎需要的参数。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\startTick.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "startTick",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "注册并启动一个计时器，通常会以60FPS的速率触发回调方法，并传入当前时间戳。注意：注册后将会持续触发回调方法，若要停止回调，需要手动调用stopTick()方法。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "callBack",
+					"type": "(timeStamp:number)=>boolean",
+					"description": "要执行的回调方法。参数 timeStamp 表示从启动Egret框架开始经过的时间(毫秒)。若回调方法返回值为true，其作用与TimerEvent.updateAfterEvent()类似，将会忽略帧频限制，在此方法处理完成后立即重绘屏幕。"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "回调方法的this对象引用。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\stopTick.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "stopTick",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "停止之前用 startTick() 方法启动的计时器。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "callBack",
+					"type": "(timeStamp:number)=>boolean",
+					"description": "要执行的回调方法。参数 timeStamp 表示从启动Egret框架开始经过的时间(毫秒)。若回调方法返回值为true，其作用与TimerEvent.updateAfterEvent()类似，将会忽略帧频限制，在此方法处理完成后立即重绘屏幕。"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "回调方法的this对象引用。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\extends.ts",
+			"kind": "globalFunction",
+			"type": "any",
+			"name": "superGetter",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "获取父类的getter属性值。代替其他语言的写法，如 super.alpha;",
+			"returns": "父类返回的值",
+			"params": [
+				{
+					"name": "currentClass",
+					"type": "any",
+					"description": "当前 class 类名，非字符串"
+				},
+				{
+					"name": "thisObj",
+					"type": "any",
+					"description": "当前对象。永远都this"
+				},
+				{
+					"name": "type",
+					"type": "string",
+					"description": "需要调用的getter属性名称"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\extends.ts",
+			"kind": "globalFunction",
+			"name": "superSetter",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "调用父类的setter属性，代替其他语言的写法，如 super.alpha = 1;",
+			"params": [
+				{
+					"name": "currentClass",
+					"type": "any",
+					"description": "当前 class 类名，非字符串"
+				},
+				{
+					"name": "thisObj",
+					"type": "any",
+					"description": "当前对象。永远都this"
+				},
+				{
+					"name": "type",
+					"type": "string",
+					"description": "需要调用的setter属性名称"
+				},
+				{
+					"name": "...values",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\toColorString.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "toColorString",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "转换数字为颜色字符串",
+			"returns": "颜色字符串，例如\"#ffffff\"。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"example": "<pre></pre>",
+			"params": [
+				{
+					"name": "value",
+					"type": "number",
+					"description": "颜色值，例如 0xffffff"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\EgretEntry.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "updateAllScreens",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "刷新屏幕显示",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Console.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "warn",
+			"memberof": "egret",
+			"scope": "instance",
+			"description": "输出一个警告信息到控制台。",
+			"params": [
+				{
+					"name": "message",
+					"question": true,
+					"type": "any",
+					"description": "要输出到控制台的信息"
+				},
+				{
+					"name": "...optionalParams",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	]
+}

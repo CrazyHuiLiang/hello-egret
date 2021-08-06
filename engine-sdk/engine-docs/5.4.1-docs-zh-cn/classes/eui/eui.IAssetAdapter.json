@@ -1,0 +1,39 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "getAsset",
+			"memberof": "eui.IAssetAdapter",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "source",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "callBack",
+					"type": "(content:any,source:string)=>void",
+					"description": ""
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "IAssetAdapter",
+		"memberof": "eui",
+		"filename": "extension\\eui\\core\\IAssetAdapter.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,110 @@
+{
+	"globalFunction": [
+		{
+			"filename": "egret\\web\\rendering\\CanvasRenderBuffer.ts",
+			"kind": "globalFunction",
+			"type": "HTMLCanvasElement",
+			"name": "__createCanvas__",
+			"memberof": "egret.web",
+			"scope": "instance",
+			"description": "创建一个canvas。",
+			"params": [
+				{
+					"name": "width",
+					"question": true,
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "height",
+					"question": true,
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\web\\WebSysImpl.ts",
+			"kind": "globalFunction",
+			"type": "WebGLTexture",
+			"name": "_createTexture",
+			"memberof": "egret.web",
+			"scope": "instance",
+			"description": "创建一个WebGLTexture",
+			"params": [
+				{
+					"name": "renderContext",
+					"type": "egret.sys.RenderContext",
+					"description": ""
+				},
+				{
+					"name": "width",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "height",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\web\\WebSysImpl.ts",
+			"kind": "globalFunction",
+			"type": "CanvasRenderingContext2D",
+			"name": "getContext2d",
+			"memberof": "egret.web",
+			"scope": "instance",
+			"description": "sys.getContext2d",
+			"params": [
+				{
+					"name": "surface",
+					"type": "HTMLCanvasElement",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\web\\WebSysImpl.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "resizeContext",
+			"memberof": "egret.web",
+			"scope": "instance",
+			"description": "sys.resizeContext。",
+			"params": [
+				{
+					"name": "renderContext",
+					"type": "egret.sys.RenderContext",
+					"description": ""
+				},
+				{
+					"name": "width",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "height",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "useMaxSize",
+					"question": true,
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	]
+}

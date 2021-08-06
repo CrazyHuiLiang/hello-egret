@@ -1,0 +1,54 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "JUSTIFY_USING_GAP",
+			"memberof": "eui.RowAlign",
+			"scope": "static",
+			"description": "通过增大垂直间隙将行两端对齐。",
+			"version": "eui 1.0",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"justifyUsingGap\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "JUSTIFY_USING_HEIGHT",
+			"memberof": "eui.RowAlign",
+			"scope": "static",
+			"description": "通过增大行高度将行两端对齐。",
+			"version": "eui 1.0",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"justifyUsingHeight\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "TOP",
+			"memberof": "eui.RowAlign",
+			"scope": "static",
+			"description": "不进行两端对齐。",
+			"version": "eui 1.0",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "\"top\""
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "RowAlign",
+		"memberof": "eui",
+		"filename": "extension\\eui\\layouts\\RowAlign.ts",
+		"description": "RowAlign 类为 TileLayout 类的 <code>rowAlign</code> 属性定义可能的值。",
+		"version": "eui 1.0",
+		"platform": "Web,Native",
+		"example": "<pre></pre>"
+	},
+	"pType": "public"
+}

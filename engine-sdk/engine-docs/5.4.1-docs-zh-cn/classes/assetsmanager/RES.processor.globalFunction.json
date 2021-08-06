@@ -1,0 +1,43 @@
+{
+	"globalFunction": [
+		{
+			"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts",
+			"kind": "globalFunction",
+			"type": "RES.ResourceInfo",
+			"name": "makeEtc1SeperatedAlphaResourceInfo",
+			"memberof": "RES.processor",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "resource",
+					"type": "RES.ResourceInfo",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts",
+			"kind": "globalFunction",
+			"name": "map",
+			"memberof": "RES.processor",
+			"scope": "instance",
+			"description": "注册加载资源的处理器",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "加载资源类型"
+				},
+				{
+					"name": "processor",
+					"type": "RES.processor.Processor",
+					"description": "加载的处理器，一个实现Processor接口的实例"
+				}
+			],
+			"pType": "public"
+		}
+	]
+}

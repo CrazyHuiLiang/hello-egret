@@ -1,0 +1,63 @@
+{
+	"globalFunction": [
+		{
+			"filename": "extension\\assetsmanager\\src\\core\\Path.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "basename",
+			"memberof": "RES.path",
+			"scope": "instance",
+			"description": "根据文件路径得到文件名字，\"C:/A/B/example.ts\"=>\"example.ts\"",
+			"returns": "文件的名字",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "filename",
+					"type": "string",
+					"description": "传入的文件路径"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\core\\Path.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "dirname",
+			"memberof": "RES.path",
+			"scope": "instance",
+			"description": "文件所在文件夹路径，\"C:/A/B/example.ts\"=>\"C:/A/B\"",
+			"returns": "文件所在文件夹的地址",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "path",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\core\\Path.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "normalize",
+			"memberof": "RES.path",
+			"scope": "instance",
+			"description": "格式化文件路径，\"C:/A/B//C//D//example.ts\"=>\"C:/A/B/C/D/example.ts\"",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "filename",
+					"type": "string",
+					"description": "传入的文件路径"
+				}
+			],
+			"pType": "public"
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"globalMember": [
+		{
+			"filename": "egret\\web\\rendering\\webgl\\TextAtlasRender.ts",
+			"kind": "globalMember",
+			"type": "egret.web.TextAtlasRender",
+			"name": "__textAtlasRender__",
+			"memberof": "egret.web",
+			"scope": "instance",
+			"description": "//测试对象, 先不用singleton的，后续整理代码，就new一个，放在全局的context上做成员变量",
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\web\\rendering\\webgl\\WebGLVertexArrayObject.ts",
+			"kind": "globalMember",
+			"name": "isIOS14Device",
+			"memberof": "egret.web",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\web\\rendering\\webgl\\TextAtlasRender.ts",
+			"kind": "globalMember",
+			"type": "string",
+			"name": "property_drawLabel",
+			"memberof": "egret.web",
+			"scope": "instance",
+			"description": "//不想改TextNode的代码了，先用这种方式实现，以后稳了再改",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\web\\rendering\\webgl\\TextAtlasRender.ts",
+			"kind": "globalMember",
+			"type": "boolean",
+			"name": "textAtlasRenderEnable",
+			"memberof": "egret.web",
+			"scope": "instance",
+			"description": "//测试开关,打开会截住老的字体渲染",
+			"pType": "public"
+		}
+	]
+}

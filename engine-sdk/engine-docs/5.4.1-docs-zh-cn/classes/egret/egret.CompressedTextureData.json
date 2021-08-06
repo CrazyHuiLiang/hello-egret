@@ -1,0 +1,63 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Uint8Array",
+			"name": "byteArray",
+			"memberof": "egret.CompressedTextureData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "face",
+			"memberof": "egret.CompressedTextureData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "glInternalFormat",
+			"memberof": "egret.CompressedTextureData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "height",
+			"memberof": "egret.CompressedTextureData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "level",
+			"memberof": "egret.CompressedTextureData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "width",
+			"memberof": "egret.CompressedTextureData",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "CompressedTextureData",
+		"memberof": "egret",
+		"filename": "egret\\display\\BitmapData.ts",
+		"description": "//refactor"
+	},
+	"pType": "public"
+}

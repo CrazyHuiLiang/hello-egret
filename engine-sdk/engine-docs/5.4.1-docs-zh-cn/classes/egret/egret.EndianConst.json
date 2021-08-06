@@ -1,0 +1,32 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "BIG_ENDIAN",
+			"memberof": "egret.EndianConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "LITTLE_ENDIAN",
+			"memberof": "egret.EndianConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "0"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "EndianConst",
+		"memberof": "egret",
+		"filename": "egret\\utils\\ByteArray.ts"
+	},
+	"pType": "public"
+}

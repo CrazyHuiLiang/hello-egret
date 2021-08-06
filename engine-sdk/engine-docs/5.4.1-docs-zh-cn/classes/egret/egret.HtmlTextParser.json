@@ -1,0 +1,64 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "HtmlTextParser",
+			"memberof": "egret.HtmlTextParser",
+			"scope": "instance",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.ITextElement[]",
+			"name": "parse",
+			"memberof": "egret.HtmlTextParser",
+			"scope": "instance",
+			"description": "将html格式文本转换为可赋值给 egret.TextField#textFlow 属性的对象",
+			"returns": "可赋值给 egret.TextField#textFlow 属性的对象",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "htmltext",
+					"type": "string",
+					"description": "html文本"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Array<egret.ITextElement>",
+			"name": "parser",
+			"memberof": "egret.HtmlTextParser",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "htmltext",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "HtmlTextParser",
+		"memberof": "egret",
+		"filename": "egret\\text\\HtmlTextParser.ts",
+		"description": "将html格式文本转换为可赋值给 egret.TextField#textFlow 属性的对象",
+		"see": [
+			"http://edn.egret.com/cn/docs/page/146 多种样式文本混合"
+		],
+		"version": "Egret 2.4",
+		"platform": "Web,Native",
+		"example": "<pre></pre>"
+	},
+	"pType": "public"
+}

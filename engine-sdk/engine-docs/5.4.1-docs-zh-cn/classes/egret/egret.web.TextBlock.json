@@ -1,0 +1,287 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_border",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_height",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_width",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "border",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "canvasHeightOffset",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "canvasWidthOffset",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "contentHeight",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "contentWidth",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "hashCode",
+			"memberof": "egret.HashObject",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "返回此对象唯一的哈希值,用于唯一确定一个对象。hashCode为大于等于1的整数。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "egret.HashObject"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "height",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "egret.web.Line",
+			"name": "line",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "null"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "measureHeight",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "measureWidth",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "egret.web.Page",
+			"name": "page",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "stroke2",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "subImageOffsetX",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "subImageOffsetY",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "tag",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "u",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "v",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "width",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "x",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "y",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "TextBlock",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "width",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "height",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "measureWidth",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "measureHeight",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "canvasWidthOffset",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "canvasHeightOffset",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "stroke2",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "border",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "updateUV",
+			"memberof": "egret.web.TextBlock",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "TextBlock",
+		"memberof": "egret.web",
+		"filename": "egret\\web\\rendering\\webgl\\TextAtlasStrategy.ts",
+		"augments": [
+			"egret.HashObject"
+		]
+	},
+	"pType": "public"
+}

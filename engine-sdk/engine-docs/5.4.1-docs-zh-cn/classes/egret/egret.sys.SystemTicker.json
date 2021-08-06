@@ -1,0 +1,37 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "pause",
+			"memberof": "egret.sys.SystemTicker",
+			"scope": "instance",
+			"description": "暂停心跳",
+			"version": "Egret 5.0.2",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resume",
+			"memberof": "egret.sys.SystemTicker",
+			"scope": "instance",
+			"description": "恢复心跳",
+			"version": "Egret 5.0.2",
+			"platform": "Web,Native",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SystemTicker",
+		"memberof": "egret.sys",
+		"filename": "egret\\player\\SystemTicker.ts",
+		"description": "Egret心跳计时器"
+	},
+	"pType": "public"
+}

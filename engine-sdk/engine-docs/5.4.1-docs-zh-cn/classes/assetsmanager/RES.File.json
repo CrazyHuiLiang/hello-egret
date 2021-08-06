@@ -1,0 +1,49 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "name",
+			"memberof": "RES.File",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "root",
+			"memberof": "RES.File",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "type",
+			"memberof": "RES.File",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "url",
+			"memberof": "RES.File",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "File",
+		"memberof": "RES",
+		"filename": "extension\\assetsmanager\\src\\core\\FileSystem.ts",
+		"description": "assetsManager底层存储资源信息",
+		"version": "Egret 5.2",
+		"platform": "Web,Native"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,144 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addEventListener",
+			"memberof": "EgretProUtil",
+			"scope": "instance",
+			"description": "注册事件",
+			"params": [
+				{
+					"name": "eventType",
+					"type": "string",
+					"description": "eventType"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "target"
+				},
+				{
+					"name": "func",
+					"type": "()=>void",
+					"description": "func"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "thisObject"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "dispatch",
+			"memberof": "EgretProUtil",
+			"scope": "instance",
+			"description": "派发事件",
+			"params": [
+				{
+					"name": "command",
+					"type": "string",
+					"description": "command"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "target"
+				},
+				{
+					"name": "...args",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "execute",
+			"memberof": "EgretProUtil",
+			"scope": "instance",
+			"description": "执行方法通过传入命令的字符串，获取已注册的方法并执行，参数为可变参数执行方法可获取到方法的返回值若找到注册该方法，会报出警告并返回 null",
+			"params": [
+				{
+					"name": "command",
+					"type": "string",
+					"description": "command"
+				},
+				{
+					"name": "...args",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "register",
+			"memberof": "EgretProUtil",
+			"scope": "instance",
+			"description": "注册方法根据传入字符串名称，注册方法同一个名称的方法只能注册一次，相同名称会报出警告",
+			"params": [
+				{
+					"name": "command",
+					"type": "string",
+					"description": "command"
+				},
+				{
+					"name": "func",
+					"type": "()=>any",
+					"description": "func"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "thisObject"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeEventListener",
+			"memberof": "EgretProUtil",
+			"scope": "instance",
+			"description": "移除事件",
+			"params": [
+				{
+					"name": "eventType",
+					"type": "string",
+					"description": "eventType"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "target"
+				},
+				{
+					"name": "func",
+					"type": "()=>void",
+					"description": "func"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "EgretProUtil",
+		"memberof": "",
+		"filename": "egret\\libs\\pro-library.d.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,49 @@
+{
+	"globalMember": [
+		{
+			"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts",
+			"kind": "globalMember",
+			"type": "RES.processor.Processor",
+			"name": "BinaryProcessor",
+			"memberof": "RES.processor",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts",
+			"kind": "globalMember",
+			"type": "RES.processor.Processor",
+			"name": "ImageProcessor",
+			"memberof": "RES.processor",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts",
+			"kind": "globalMember",
+			"type": "RES.processor.Processor",
+			"name": "JsonProcessor",
+			"memberof": "RES.processor",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts",
+			"kind": "globalMember",
+			"type": "RES.processor.Processor",
+			"name": "SoundProcessor",
+			"memberof": "RES.processor",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts",
+			"kind": "globalMember",
+			"type": "RES.processor.Processor",
+			"name": "TextProcessor",
+			"memberof": "RES.processor",
+			"scope": "instance",
+			"pType": "public"
+		}
+	]
+}

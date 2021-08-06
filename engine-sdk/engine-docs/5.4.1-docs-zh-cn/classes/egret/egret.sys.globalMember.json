@@ -1,0 +1,40 @@
+{
+	"globalMember": [
+		{
+			"filename": "egret\\player\\Player.ts",
+			"kind": "globalMember",
+			"type": "egret.Stage",
+			"name": "$TempStage",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\player\\Player.ts",
+			"kind": "globalMember",
+			"type": "{new(width?:number,height?:number,context?:WebGLRenderingContext):egret.sys.RenderContext}",
+			"name": "WebGLRenderContext",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\text\\Font.ts",
+			"kind": "globalMember",
+			"type": "{[url:string]:any}",
+			"name": "fontResourceCache",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\media\\Sound.ts",
+			"kind": "globalMember",
+			"type": "Array<egret.SoundChannel>",
+			"name": "usingChannel",
+			"memberof": "egret.sys",
+			"scope": "instance",
+			"pType": "public"
+		}
+	]
+}

@@ -1,0 +1,48 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "Promise<any>",
+			"name": "onLoadStart",
+			"memberof": "RES.processor.ETC1KTXProcessor",
+			"scope": "static",
+			"params": [
+				{
+					"name": "host",
+					"description": ""
+				},
+				{
+					"name": "resource",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "onRemoveStart",
+			"memberof": "RES.processor.ETC1KTXProcessor",
+			"scope": "static",
+			"params": [
+				{
+					"name": "host",
+					"description": ""
+				},
+				{
+					"name": "resource",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ETC1KTXProcessor",
+		"memberof": "RES.processor",
+		"filename": "extension\\assetsmanager\\src\\processor\\Processor.ts"
+	}
+}

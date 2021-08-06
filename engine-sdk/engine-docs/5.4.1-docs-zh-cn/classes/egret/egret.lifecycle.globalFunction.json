@@ -1,0 +1,37 @@
+{
+	"globalFunction": [
+		{
+			"filename": "egret\\player\\SystemTicker.ts",
+			"kind": "globalFunction",
+			"name": "addLifecycleListener",
+			"memberof": "egret.lifecycle",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "plugin",
+					"type": "LifecyclePlugin",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemTicker.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "onPause",
+			"memberof": "egret.lifecycle",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\player\\SystemTicker.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "onResume",
+			"memberof": "egret.lifecycle",
+			"scope": "instance",
+			"pType": "public"
+		}
+	]
+}

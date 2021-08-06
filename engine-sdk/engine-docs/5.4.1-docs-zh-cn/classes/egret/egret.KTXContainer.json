@@ -1,0 +1,216 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "bytesOfKeyValueData",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the bytes of key value data",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "glBaseInternalFormat",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the base internal format",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "glFormat",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the openGL format",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "glInternalFormat",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the openGL internal format",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "glType",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the openGL type",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "glTypeSize",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the openGL type size",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"name": "isInvalid",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "If the container has been made invalid (eg. constructor failed to correctly load array buffer)",
+			"pType": "public",
+			"default": "false"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "loadType",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the load type",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "numberOfArrayElements",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the number of array elements",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "numberOfFaces",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the number of faces",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "numberOfMipmapLevels",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets the number of mipmap levels",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "pixelDepth",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets image depth in pixels",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "pixelHeight",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets image height in pixel",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "pixelWidth",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Gets image width in pixel",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "KTXContainer",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Creates a new KhronosTextureContainer",
+			"params": [
+				{
+					"name": "arrayBuffer",
+					"type": "any",
+					"description": "contents of the KTX container file"
+				},
+				{
+					"name": "facesExpected",
+					"type": "number",
+					"description": "should be either 1 or 6, based whether a cube texture or or"
+				},
+				{
+					"name": "threeDExpected",
+					"question": true,
+					"type": "boolean",
+					"description": "provision for indicating that data should be a 3D texture, not implemented"
+				},
+				{
+					"name": "textureArrayExpected",
+					"question": true,
+					"type": "boolean",
+					"description": "provision for indicating that data should be a texture array, not implemented"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "_upload2DCompressedLevels",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "bitmapData",
+					"type": "egret.BitmapData",
+					"description": ""
+				},
+				{
+					"name": "loadMipmaps",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "uploadLevels",
+			"memberof": "egret.KTXContainer",
+			"scope": "instance",
+			"description": "Uploads KTX content to a Babylon Texture.It is assumed that the texture has already been created & is currently bound",
+			"params": [
+				{
+					"name": "bitmapData",
+					"type": "egret.BitmapData",
+					"description": ""
+				},
+				{
+					"name": "loadMipmaps",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "KTXContainer",
+		"memberof": "egret",
+		"filename": "egret\\display\\KTXContainer.ts",
+		"description": "!!!!!!!!inspired by Babylon.js!!!!!!!!!!!!!for description see https://www.khronos.org/opengles/sdk/tools/KTX/for file layout see https://www.khronos.org/opengles/sdk/tools/KTX/file_format_spec/Current families are astc, dxt, pvrtc, etc2, & etc1.",
+		"returns": "The extension selected."
+	},
+	"pType": "public"
+}

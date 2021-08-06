@@ -1,0 +1,67 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addCallback",
+			"memberof": "egret.ExternalInterface",
+			"scope": "static",
+			"description": "监听 functionName 回调，需要在native中有调用 functionName 这个字段，而不是 此类的call。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "functionName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "listener",
+					"type": "(value:string)=>void",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "call",
+			"memberof": "egret.ExternalInterface",
+			"scope": "static",
+			"description": "调用 functionName，并将value传入到native中。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "functionName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "value",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ExternalInterface",
+		"memberof": "egret",
+		"filename": "egret\\external\\ExternalInterface.ts",
+		"description": "h5与native交互。",
+		"see": [
+			"http://edn.egret.com/cn/article/index/id/714 Egret 与 Native 通信基本技巧"
+		],
+		"version": "Egret 2.4",
+		"platform": "Web,Native",
+		"example": "<pre></pre>"
+	},
+	"pType": "public"
+}

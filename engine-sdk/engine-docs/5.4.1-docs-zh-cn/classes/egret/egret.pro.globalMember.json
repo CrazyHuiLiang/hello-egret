@@ -1,0 +1,22 @@
+{
+	"globalMember": [
+		{
+			"filename": "egret\\3d\\EgretPro.ts",
+			"kind": "globalMember",
+			"type": "boolean",
+			"name": "egret2dDriveMode",
+			"memberof": "egret.pro",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\3d\\EgretPro.ts",
+			"kind": "globalMember",
+			"type": "HTMLCanvasElement",
+			"name": "mainCanvas",
+			"memberof": "egret.pro",
+			"scope": "instance",
+			"pType": "public"
+		}
+	]
+}

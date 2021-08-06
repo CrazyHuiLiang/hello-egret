@@ -1,0 +1,303 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "egret.BitmapData",
+			"name": "bitmapData",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "被引用的 BitmapData 对象。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "disposeBitmapData",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "销毁纹理时是否销毁对应BitmapData",
+			"version": "Egret 5.0.8",
+			"platform": "Web,Native",
+			"pType": "public",
+			"default": "true"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "hashCode",
+			"memberof": "egret.HashObject",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "返回此对象唯一的哈希值,用于唯一确定一个对象。hashCode为大于等于1的整数。",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "egret.HashObject"
+		},
+		{
+			"kind": "member",
+			"type": "ArrayBuffer",
+			"name": "ktxData",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "被引用的 KTXData 对象。",
+			"version": "Egret 5.2.21",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "textureHeight",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "纹理高度，只读属性，不可以设置",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "textureWidth",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "纹理宽度，只读属性，不可以设置",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Texture",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "创建一个 egret.Texture 对象",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "$getScaleBitmapHeight",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "$getScaleBitmapWidth",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "$getTextureHeight",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "$getTextureWidth",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"name": "_setBitmapData",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "设置 BitmapData 对象。",
+			"version": "Egret 3.2.1",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "value",
+					"type": "egret.BitmapData",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"name": "_setKtxData",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "设置 KTXData 对象。",
+			"version": "Egret 3.2.1",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "value",
+					"type": "ArrayBuffer",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "dispose",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "释放纹理",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number[]",
+			"name": "getPixel32",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"deprecated": "",
+			"params": [
+				{
+					"name": "x",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "y",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number[]",
+			"name": "getPixels",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "获取指定像素区域的颜色值",
+			"returns": "指定像素区域的颜色值",
+			"version": "Egret 3.2.1",
+			"platform": "Web",
+			"params": [
+				{
+					"name": "x",
+					"type": "number",
+					"description": "像素区域的X轴坐标"
+				},
+				{
+					"name": "y",
+					"type": "number",
+					"description": "像素区域的Y轴坐标"
+				},
+				{
+					"name": "width",
+					"type": "number",
+					"default": "1",
+					"description": "像素区域的宽度"
+				},
+				{
+					"name": "height",
+					"type": "number",
+					"default": "1",
+					"description": "像素区域的高度"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "saveToFile",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "裁剪指定区域并保存成图片。native只支持 \"image/png\" 和 \"image/jpeg\"；Web中由于各个浏览器的实现不一样，因此建议也只用这2种。",
+			"version": "Egret 2.4",
+			"platform": "Native",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "转换的类型，如  \"image/png\""
+				},
+				{
+					"name": "filePath",
+					"type": "string",
+					"description": "图片的名称的路径（主目录为游戏的私有空间，路径中不能有 \"../\"，Web只支持传名称。）"
+				},
+				{
+					"name": "rect",
+					"question": true,
+					"type": "egret.Rectangle",
+					"description": "需要转换的区域"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "toDataURL",
+			"memberof": "egret.Texture",
+			"scope": "instance",
+			"description": "转换成base64字符串，如果图片（或者包含的图片）跨域，则返回null",
+			"returns": "base64字符串",
+			"version": "Egret 2.4",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "转换的类型，如  \"image/png\""
+				},
+				{
+					"name": "rect",
+					"question": true,
+					"type": "egret.Rectangle",
+					"description": "需要转换的区域"
+				},
+				{
+					"name": "encoderOptions",
+					"question": true,
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Texture",
+		"memberof": "egret",
+		"filename": "egret\\display\\Texture.ts",
+		"description": "纹理类是对不同平台不同的图片资源的封装在HTML5中，资源是一个HTMLElement对象在OpenGL / WebGL中，资源是一个提交GPU后获取的纹理idTexture类封装了这些底层实现的细节，开发者只需要关心接口即可",
+		"see": [
+			"http://edn.egret.com/cn/docs/page/135 纹理集的使用",
+			"http://edn.egret.com/cn/docs/page/123 获取资源的几种方式"
+		],
+		"version": "Egret 2.4",
+		"platform": "Web,Native",
+		"example": "<pre></pre>",
+		"augments": [
+			"egret.HashObject"
+		],
+		"children": [
+			"egret.RenderTexture"
+		]
+	},
+	"pType": "public"
+}

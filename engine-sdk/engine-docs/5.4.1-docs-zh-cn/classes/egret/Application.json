@@ -1,0 +1,30 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "EgretProUtil",
+			"name": "egretProUtil",
+			"memberof": "Application",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "Application",
+			"name": "instance",
+			"memberof": "Application",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Application",
+		"memberof": "",
+		"filename": "egret\\libs\\pro-library.d.ts"
+	},
+	"pType": "public"
+}

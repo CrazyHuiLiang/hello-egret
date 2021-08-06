@@ -1,0 +1,596 @@
+{
+	"globalFunction": [
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "$addResourceData",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "自定义添加一项资源配置。",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "data",
+					"type": "{name:string,type:string,url:string}",
+					"description": "要添加的配置。"
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "addEventListener",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "添加事件侦听器,参考 ResourceEvent 定义的常量。",
+			"see": [
+				"RES.ResourceEvent",
+				"#setMaxRetryTimes"
+			],
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "事件的类型。"
+				},
+				{
+					"name": "listener",
+					"type": "(event:egret.Event)=>void",
+					"description": "处理事件的侦听器函数。此函数必须接受 Event 对象作为其唯一的参数，并且不能返回任何结果，如下面的示例所示： function(evt:Event):void 函数可以有任何名称。"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "侦听函数绑定的 this 对象。"
+				},
+				{
+					"name": "useCapture",
+					"type": "boolean",
+					"default": "false",
+					"description": "确定侦听器是运行于捕获阶段还是运行于目标和冒泡阶段。如果将 useCapture 设置为 true，则侦听器只在捕获阶段处理事件，而不在目标或冒泡阶段处理事件。如果 useCapture 为 false，则侦听器只在目标或冒泡阶段处理事件。要在所有三个阶段都侦听事件，请调用 addEventListener 两次：一次将 useCapture 设置为 true，一次将 useCapture 设置为 false。"
+				},
+				{
+					"name": "priority",
+					"type": "number",
+					"default": "0",
+					"description": "事件侦听器的优先级。优先级由一个带符号的 32 位整数指定。数字越大，优先级越高。优先级为 n 的所有侦听器会在优先级为 n -1 的侦听器之前得到处理。如果两个或更多个侦听器共享相同的优先级，则按照它们的添加顺序进行处理。默认优先级为 0。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "boolean",
+			"name": "createGroup",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "创建自定义的加载资源组,注意：此方法仅在资源配置文件加载完成后执行才有效。<br>可以监听 ResourceEvent.CONFIG_COMPLETE 事件来确认配置加载完成。",
+			"returns": "是否创建成功。",
+			"see": [
+				"#setMaxRetryTimes"
+			],
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "要创建的加载资源组的组名。"
+				},
+				{
+					"name": "keys",
+					"type": "Array<string>",
+					"description": "要包含的键名列表，key 对应配置文件里的 name 属性或 sbuKeys 属性的一项或一个资源组名。"
+				},
+				{
+					"name": "override",
+					"type": "boolean",
+					"default": "false",
+					"description": "是否覆盖已经存在的同名资源组,默认 false。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "boolean",
+			"name": "destroyRes",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "销毁单个资源文件或一组资源的缓存数据,返回是否删除成功。",
+			"see": [
+				"#setMaxRetryTimes"
+			],
+			"returns": "是否销毁成功。",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "配置文件中加载项的name属性或资源组名。"
+				},
+				{
+					"name": "force",
+					"question": true,
+					"type": "boolean",
+					"description": "销毁一个资源组时其他资源组有同样资源情况资源是否会被删除，默认值 true。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "Array<RES.ResourceItem>",
+			"name": "getGroupByName",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "根据组名获取组加载项列表。",
+			"returns": "加载项列表。",
+			"see": [
+				"RES.ResourceItem",
+				"#setMaxRetryTimes"
+			],
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "组名。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "any",
+			"name": "getRes",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "同步方式获取缓存的已经加载成功的资源。<br>资源类型和对应的返回值类型关系如下：<br>RES.ResourceItem.TYPE_BIN : ArrayBuffer JavaScript 原生对象<br>RES.ResourceItem.TYPE_IMAGE : img Html 对象，或者 egret.BitmapData 接口。<br>RES.ResourceItem.TYPE_JSON : Object<br>RES.ResourceItem.TYPE_SHEET : Object<br>  1. 如果传入的参数是整个 SpriteSheet 的名称返回的是 {\"image1\":Texture,\"image2\":Texture} 这样的格式。<br>  2. 如果传入的是 \"sheet.image1\"，返回的是单个资源。<br>  3. 如果传入的是 \"image1\" 单个资源的名称，返回的是单个资源。但是如果有两张 SpriteSheet 中有单个图片资源名称相同，返回的是后加载的那个图片资源。<br>RES.ResourceItem.TYPE_SOUND : HtmlSound Html 对象<br>RES.ResourceItem.TYPE_TEXT : string",
+			"see": [
+				"RES.ResourceItem",
+				"#setMaxRetryTimes"
+			],
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "对应配置文件里的 name 属性或 subKeys 属性的一项。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "Promise<any>",
+			"name": "getResAsync",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "异步方式获取配置里的资源。只要是配置文件里存在的资源，都可以通过异步方式获取。",
+			"see": [
+				"#setMaxRetryTimes"
+			],
+			"example": "以下代码演示了如何通过getResAsync加载资源<pre><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RES.getResAsync(&quot;resource/example.json&quot;);//只传入key值获取资源<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RES.getResAsync(&quot;resource/example.json&quot;,&nbsp;(data)&nbsp;=&gt;&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(data)<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},&nbsp;this)&nbsp;//传入key值，compFunc和thisObject获取资源，后两个必须同时出现<br/></pre>",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "对应配置文件里的 name 属性或 sbuKeys 属性的一项。"
+				},
+				{
+					"name": "compFunc",
+					"question": true,
+					"type": "GetResAsyncCallback",
+					"description": "回调函数。示例：compFunc(data,key):void。"
+				},
+				{
+					"name": "thisObject",
+					"question": true,
+					"type": "any",
+					"description": "回调函数的 this 引用。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "Promise<any>",
+			"name": "getResByUrl",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "通过完整URL方式获取外部资源。",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "url",
+					"type": "string",
+					"description": "要加载文件的外部路径。"
+				},
+				{
+					"name": "compFunc",
+					"question": true,
+					"type": "Function",
+					"description": "回调函数。示例：compFunc(data,url):void。"
+				},
+				{
+					"name": "thisObject",
+					"question": true,
+					"type": "any",
+					"description": "回调函数的 this 引用。"
+				},
+				{
+					"name": "type",
+					"type": "string",
+					"default": "\"\"",
+					"description": "文件类型(可选)。请使用 ResourceItem 类中定义的静态常量。若不设置将根据文件扩展名生成。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\core\\ResourceConfig.ts",
+			"kind": "globalFunction",
+			"type": "RES.File|null",
+			"name": "getResourceInfo",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "通过文件路径获取资源信息",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "path",
+					"type": "string",
+					"description": "文件路径"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "RES.VersionController",
+			"name": "getVersionController",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "获得版本控制器.",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"name": "getVirtualUrl",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "转换加载资源的地址（经过版本控制器的转换）",
+			"returns": "转换后的地址",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "url",
+					"description": "原始资源的路径"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "boolean",
+			"name": "hasRes",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "检查配置文件里是否含有指定的资源。",
+			"returns": "是否拥有指定资源",
+			"see": [
+				"#setMaxRetryTimes"
+			],
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "对应配置文件里的 name 属性或 sbuKeys 属性的一项。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "boolean",
+			"name": "isGroupLoaded",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "检查某个资源组是否已经加载完成。",
+			"returns": "是否正在加载。",
+			"see": [
+				"#setMaxRetryTimes"
+			],
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "组名。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "Promise<void>",
+			"name": "loadConfig",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "加载配置文件并解析。",
+			"returns": "Promise",
+			"see": [
+				"#setMaxRetryTimes"
+			],
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "url",
+					"type": "string",
+					"description": "资源配置的url地址"
+				},
+				{
+					"name": "resourceRoot",
+					"type": "string",
+					"description": "资源配置的根地址"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "Promise<void>",
+			"name": "loadGroup",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "根据组名加载一组资源。",
+			"see": [
+				"#setMaxRetryTimes"
+			],
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "要加载资源组的组名。"
+				},
+				{
+					"name": "priority",
+					"type": "number",
+					"default": "0",
+					"description": "加载优先级,可以为负数,默认值为 0。<br>低优先级的组必须等待高优先级组完全加载结束才能开始，同一优先级的组会同时加载。"
+				},
+				{
+					"name": "reporter",
+					"question": true,
+					"type": "RES.PromiseTaskReporter",
+					"description": "资源组的加载进度提示"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "nameSelector",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "将资源的文件名称转换为项目中所使用的Key值。在加载合并图集的时候使用，例如图集加载A_json，需要加载对应A_png，这里就是转换的机制一般项目中无需更改，只有没有使用默认的key和文件对应的需要修改",
+			"returns": "项目中所用的key值",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "url",
+					"description": "资源名称。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\core\\ResourceManager.ts",
+			"kind": "globalFunction",
+			"name": "profile",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "打印图片所占内存",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"name": "registerAnalyzer",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "以类定义为值进行映射注入，已废弃。",
+			"deprecated": "",
+			"see": [
+				"RES.processor.map"
+			],
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "analyzerClass",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "registerVersionController",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "注册版本控制器,通过RES模块加载资源时会从版本控制器获取真实url",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "vcs",
+					"type": "RES.VersionController",
+					"description": "注入的版本控制器。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "removeEventListener",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "移除事件侦听器,参考ResourceEvent定义的常量。",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "事件名。"
+				},
+				{
+					"name": "listener",
+					"type": "(event:egret.Event)=>void",
+					"description": "侦听函数。"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "侦听函数绑定的this对象。"
+				},
+				{
+					"name": "useCapture",
+					"type": "boolean",
+					"default": "false",
+					"description": "是否使用捕获，这个属性只在显示列表中生效。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"name": "setIsCompatible",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "设置是否为兼容模式 当值为true时，assetsManager会以Res的设计输出，当为false时候，所有的加载资源都会以promise的方式返回默认是false，以严格assetsManager方式运行",
+			"version": "Egret 5.2.9",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "value",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "setMaxLoadingThread",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "设置最大并发加载线程数量，默认值是 4。",
+			"see": [
+				"#setMaxRetryTimes"
+			],
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "thread",
+					"type": "number",
+					"description": "要设置的并发加载数。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "void",
+			"name": "setMaxRetryTimes",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "设置资源加载失败时的重试次数，默认值是 3。",
+			"example": "<pre></pre>",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "retry",
+					"type": "number",
+					"description": "要设置的重试次数。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"filename": "extension\\assetsmanager\\src\\shim\\Resource.ts",
+			"kind": "globalFunction",
+			"type": "string",
+			"name": "typeSelector",
+			"memberof": "RES",
+			"scope": "instance",
+			"description": "获取文件的读取类型在使用getResByUrl没有指定读取文件的类型，会根据这个方法寻找对应的类型没有查找到的文件类型以二进制格式默认加载",
+			"returns": "读取文件所用的Processor类型",
+			"version": "Egret 5.2",
+			"platform": "Web,Native",
+			"params": [
+				{
+					"name": "path",
+					"type": "string",
+					"description": "文件路径"
+				}
+			],
+			"pType": "public"
+		}
+	]
+}

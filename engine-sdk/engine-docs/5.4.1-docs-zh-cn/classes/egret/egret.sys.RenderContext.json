@@ -1,0 +1,13 @@
+{
+	"member": [],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "RenderContext",
+		"memberof": "egret.sys",
+		"filename": "egret\\player\\SystemRenderer.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,159 @@
+{
+	"globalMember": [
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "BAIDUGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在百度小游戏上",
+			"version": "Egret 5.2.13",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "FASTGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在华为快游戏上",
+			"version": "Egret 5.3.9",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "MYGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在支付宝小游戏上",
+			"version": "Egret 5.2.33",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "NATIVE",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在NATIVE上",
+			"version": "Egret 2.4",
+			"deprecated": "",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "OPPOGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在 Oppo 小游戏上",
+			"version": "Egret 5.2.14",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "QGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在小米快游戏上",
+			"version": "Egret 5.2.14",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "QHGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在 360 小游戏上",
+			"version": "Egret 5.3.5",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "QQGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在 QQ 小游戏上",
+			"version": "Egret 5.2.25",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "RUNTIME2",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在Runtime2.0上",
+			"version": "Egret 5.1.5",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "TBCREATIVEAPP",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在淘宝创意互动上",
+			"version": "Egret 5.3.10",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "TTGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在字节跳动小游戏上",
+			"version": "Egret 5.3.8",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "VIVOGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在 vivo 小游戏上",
+			"version": "Egret 5.2.23",
+			"platform": "All",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "WEB",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在Web上",
+			"version": "Egret 2.4",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\system\\Capabilities.ts",
+			"kind": "globalMember",
+			"name": "WXGAME",
+			"memberof": "egret.RuntimeType",
+			"scope": "instance",
+			"description": "运行在微信小游戏上",
+			"version": "Egret 5.1.5",
+			"platform": "All",
+			"pType": "public"
+		}
+	]
+}

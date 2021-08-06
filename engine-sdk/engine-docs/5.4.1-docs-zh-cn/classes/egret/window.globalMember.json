@@ -1,0 +1,53 @@
+{
+	"globalMember": [
+		{
+			"filename": "Defines.debug.ts",
+			"kind": "globalMember",
+			"type": "boolean",
+			"name": "DEBUG",
+			"memberof": "window",
+			"scope": "instance",
+			"description": "是否为 debug 模式。",
+			"version": "Egret 2.5",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"filename": "Defines.debug.ts",
+			"kind": "globalMember",
+			"type": "boolean",
+			"name": "RELEASE",
+			"memberof": "window",
+			"scope": "instance",
+			"description": "是否为 release 模式。",
+			"version": "Egret 2.5",
+			"platform": "Web,Native",
+			"pType": "public"
+		},
+		{
+			"filename": "egret\\utils\\HashObject.ts",
+			"kind": "globalMember",
+			"name": "__define",
+			"memberof": "window",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\utils\\HashObject.ts",
+			"kind": "globalMember",
+			"name": "__global",
+			"memberof": "window",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"filename": "egret\\utils\\HashObject.ts",
+			"kind": "globalMember",
+			"name": "global",
+			"memberof": "window",
+			"scope": "instance",
+			"description": "/// <reference path=\"registerClass.ts\" />",
+			"pType": "public"
+		}
+	]
+}

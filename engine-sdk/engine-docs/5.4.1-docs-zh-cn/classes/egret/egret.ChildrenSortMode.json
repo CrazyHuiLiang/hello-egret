@@ -1,0 +1,52 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "DECREASE_Y",
+			"memberof": "egret.ChildrenSortMode",
+			"scope": "static",
+			"description": "Y递减模式。自动按y坐标降序排序。",
+			"version": "Egret 5.2.19",
+			"platform": "Native",
+			"pType": "public",
+			"default": "\"decreaseY\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "DEFAULT",
+			"memberof": "egret.ChildrenSortMode",
+			"scope": "static",
+			"description": "默认方式。",
+			"version": "Egret 5.2.19",
+			"platform": "Native",
+			"pType": "public",
+			"default": "\"default\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "INCREASE_Y",
+			"memberof": "egret.ChildrenSortMode",
+			"scope": "static",
+			"description": "Y递增模式。自动按y坐标升序排序。",
+			"version": "Egret 5.2.19",
+			"platform": "Native",
+			"pType": "public",
+			"default": "\"increaseY\""
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ChildrenSortMode",
+		"memberof": "egret",
+		"filename": "egret\\display\\native\\ChildrenSortMode.ts",
+		"description": "BitmapFillMode 类定义egret.DisplayObjectContainer的子项目排序方式。",
+		"version": "Egret 5.2.19",
+		"platform": "Native"
+	}
+}
