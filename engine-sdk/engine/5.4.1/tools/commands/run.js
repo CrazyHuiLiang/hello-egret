@@ -89,7 +89,13 @@ var Run = /** @class */ (function () {
                         tasks.run();
                         target = egret.args.target;
                         projectConfig = parseConfig.parseConfig();
-                        return [4 /*yield*/, res.build({ projectRoot: projectRoot, debug: true, command: command, target: target, projectConfig: projectConfig })];
+                        console.log('-------', { projectRoot: projectRoot, debug: true, command: command, target: target, projectConfig: projectConfig });
+                        const buildR = res.build({ projectRoot: projectRoot, debug: true, command: command, target: target, projectConfig: projectConfig });
+                        console.log('\n\n\n\n-------', buildR);
+                        buildR.then(result => {
+                            console.log('\n\n\--------then result', result);
+                        });
+                        return [4 /*yield*/, buildR];
                     case 1:
                         _a.sent();
                         return [2 /*return*/, global.exitCode];

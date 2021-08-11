@@ -3232,21 +3232,49 @@
                         o.sent(), o.label = 3;
 
                       case 3:
-                        for (p = f.matcher ? f.matcher : "resource/**/*.*", m = s.src(p, {
-                            cwd: i,
-                            base: i
-                        }).pipe(_(r)), g = f.commands.map(function(e) {
+                        p = f.matcher ? f.matcher : "resource/**/*.*";
+                        console.log('matcher', p, f.matcher);
+
+                        m = s.src(p, { cwd: i, base: i }).pipe(_(r)); 
+                        console.log('stream', m, s, i, _, r);
+
+                        console.log('plugins', f, f.commands, l);
+
+                        g = f.commands.map(function(e) {
+                            console.log('f.commands', l, e);
                             return l.createPlugin(e, d);
-                        }), "." == f.outputDir && g.push(_(n)), g.push(s.dest(function(e) {
+                        });
+                        console.log('plugins created', g);
+
+                        "." == f.outputDir && g.push(_(n)); 
+                        console.log('plugins', g, f, f.outputDir, _, n);
+
+                        g.push(s.dest(function(e) {
+                            console.log('vinylfs', e.outputDir, d);
                             return e.outputDir ? e.outputDir : d;
-                        })), h = 0, y = g; h < y.length; h++) v = y[h], m = m.pipe(v);
-                        return [ 2, new Promise(function(e, t) {
-                            m.on("end", function() {
-                                e(m);
-                            }).on("error", function(e) {
-                                console.log(e);
-                            });
-                        }) ];
+                        }));
+                        h = 0;
+                        y = g;
+                        console.log('before pipe stream', y, d);
+
+                        for (;
+
+                                h < y.length;
+                                
+                                h++
+                            ) {
+                                v = y[h];
+                                m = m.pipe(v);
+                                console.log('pipe', v, m);
+                            }
+
+                        return [ 
+                            2, 
+                            new Promise(function(e, t) { 
+                                m.on("end", function() { e(m);})
+                                .on("error", function(e) { console.log(e); });
+                            }) 
+                        ];
                     }
                 });
             });
