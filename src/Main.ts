@@ -29,101 +29,130 @@
 
 class Main extends eui.UILayer {
 
-    protected createChildren(): void {
+    private textfield: egret.TextField;
+
+    constructor() {
+        super();
+        console.log('%cMain constructor\n', 'color: #f0f', this);
+
+        this.registerAppLifecycle();
+    }
+
+    // example: UILayer life cycle
+    protected async createChildren(): Promise<void> {
         super.createChildren();
 
+        console.log('createChildren');
+
+        //inject the custom material parser
+        //注入自定义的素材解析器
+        this.registerAdapter();
+
+        await this.loadResource();
+        this.addShape();
+        this.createGameScene();
+
+        const result = await RES.getResAsync("description_json")
+        this.startAnimation(result);
+
+        
+        await platform.login();
+        const userInfo = await platform.getUserInfo();
+        console.log("userInfo", userInfo);
+    }
+
+    // example: UILayer life cycle
+    protected childrenCreated(): void {
+        super.createChildren();
+        console.log('childrenCreated');
+    }
+
+    // example: app life cycle
+    private registerAppLifecycle(): void {
         egret.lifecycle.addLifecycleListener((context) => {
             // custom lifecycle plugin
+            console.log('lifecycle', context);
         })
 
         // 进入后台
         egret.lifecycle.onPause = () => {
             egret.ticker.pause();
             console.log('进入后台');
-            
         }
 
         egret.lifecycle.onResume = () => {
             egret.ticker.resume();
-            console.log('进入后台');
+            console.log('进入前台');
         }
+    }
 
-        //inject the custom material parser
-        //注入自定义的素材解析器
-        let assetAdapter = new AssetAdapter();
-        egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
+    // example: register adapter
+    // TODO: check purpose
+    private registerAdapter(): void {
+        console.log('before registerImplementation');
+        egret.registerImplementation("eui.IAssetAdapter", new AssetAdapter());
         egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
-
-
-        this.runGame().catch(e => {
-            console.log(e);
-        })
+        console.log('after registerImplementation');
     }
 
-    private async runGame() {
-        await this.loadResource()
-        this.createGameScene();
-        const result = await RES.getResAsync("description_json")
-        this.startAnimation(result);
-        await platform.login();
-        const userInfo = await platform.getUserInfo();
-        console.log("userInfo", userInfo);
 
-    }
-
+    // example: load resource and add/remove sprite to stage
+    // TODO RES.load* 只是单纯的将网络资源加载一遍？
     private async loadResource() {
         try {
             const loadingView = new LoadingUI();
             this.stage.addChild(loadingView);
 
-
-
+            RES.addEventListener(RES.ResourceEvent.CONFIG_COMPLETE, e => {
+                console.log('RES.ResourceEvent.CONFIG_COMPLETE\n', e);
+            }, this);
             await RES.loadConfig("resource/default.res.json", "resource/");
             await this.loadTheme();
             await RES.loadGroup("preload", 0, loadingView);
             this.stage.removeChild(loadingView);
-
-
-
-            const shape: egret.Shape = new egret.Shape();
-            shape.x = 100;
-            shape.y = 200;
-            shape.anchorOffsetX = 50;
-            shape.anchorOffsetY = 100;
-            
-            shape.graphics.beginFill(0x0000ff);
-            shape.graphics.drawRect(0, 0, 50, 50);
-            shape.graphics.endFill();
-            shape.graphics.beginFill(0x0000ff);
-            shape.graphics.drawRect(50, 50, 50, 50);
-            shape.graphics.endFill();
-            shape.graphics.beginFill(0xff0000);
-            shape.graphics.drawRect(50, 0, 50, 50);
-            shape.graphics.endFill();
-            shape.graphics.beginFill(0xff0000);
-            shape.graphics.drawRect(0, 50, 50, 50);
-            shape.graphics.endFill();
-
-            this.stage.addChild(shape);
         }
         catch (e) {
             console.error(e);
         }
     }
 
+    // example: grachic shape
+    private addShape(): void {
+        console.log('addShape');
+        
+        const shape: egret.Shape = new egret.Shape();
+        shape.x = 80;
+        shape.y = 320;
+        shape.anchorOffsetX = 50;
+        shape.anchorOffsetY = 100;
+        
+        shape.graphics.beginFill(0x0000ff);
+        shape.graphics.drawRect(0, 0, 50, 50);
+        shape.graphics.endFill();
+        shape.graphics.beginFill(0x0000ff);
+        shape.graphics.drawRect(50, 50, 50, 50);
+        shape.graphics.endFill();
+        shape.graphics.beginFill(0xff0000);
+        shape.graphics.drawRect(50, 0, 50, 50);
+        shape.graphics.endFill();
+        shape.graphics.beginFill(0xff0000);
+        shape.graphics.drawRect(0, 50, 50, 50);
+        shape.graphics.endFill();
+
+        this.stage.addChild(shape);
+    }
+
+    // example: 创建主题
+    // TODO: detect porpose
     private loadTheme() {
         return new Promise((resolve, reject) => {
             // load skin theme configuration file, you can manually modify the file. And replace the default skin.
             //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。
             let theme = new eui.Theme("resource/default.thm.json", this.stage);
-            theme.addEventListener(eui.UIEvent.COMPLETE, () => {
-                resolve();
-            }, this);
-
+            theme.addEventListener(eui.UIEvent.COMPLETE, resolve, this);
         })
     }
 
-    private textfield: egret.TextField;
     /**
      * 创建场景界面
      * Create scene interface
@@ -162,7 +191,7 @@ class Main extends eui.UILayer {
         colorLabel.textColor = 0xffffff;
         colorLabel.width = stageW - 172;
         colorLabel.textAlign = "center";
-        colorLabel.text = "Hello Egret";
+        colorLabel.text = "Hello Egret，I'm comming!";
         colorLabel.size = 24;
         colorLabel.x = 172;
         colorLabel.y = 80;
@@ -170,21 +199,23 @@ class Main extends eui.UILayer {
 
         let textfield = new egret.TextField();
         this.addChild(textfield);
-        textfield.alpha = 0;
+        textfield.alpha = 1;
         textfield.width = stageW - 172;
         textfield.textAlign = egret.HorizontalAlign.CENTER;
         textfield.size = 24;
+        textfield.text = "I'm a Text Field"
         textfield.textColor = 0xffffff;
         textfield.x = 172;
         textfield.y = 135;
         this.textfield = textfield;
 
         let button = new eui.Button();
-        button.label = "Click!";
+        button.label = "showDialog";
         button.horizontalCenter = 0;
-        button.verticalCenter = 0;
+        // button.verticalCenter = 0;
+        button.top = 220;
         this.addChild(button);
-        button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
+        button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showDialog, this);
     }
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
@@ -201,6 +232,8 @@ class Main extends eui.UILayer {
      * Description file loading is successful, start to play the animation
      */
     private startAnimation(result: Array<any>): void {
+        console.log('startAnimation\n', result);
+        
         let parser = new egret.HtmlTextParser();
 
         let textflowArr = result.map(text => parser.parse(text));
@@ -230,9 +263,9 @@ class Main extends eui.UILayer {
      * 点击按钮
      * Click the button
      */
-    private onButtonClick(e: egret.TouchEvent) {
+    private showDialog(e: egret.TouchEvent) {
         let panel = new eui.Panel();
-        panel.title = "Title";
+        panel.title = "I'm a eui.Panel";
         panel.horizontalCenter = 0;
         panel.verticalCenter = 0;
         this.addChild(panel);
